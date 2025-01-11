@@ -4,78 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>خدمات التوثيق</title>
-    <!-- Bootstrap CSS CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">    <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'IBM Plex Sans Arabic', sans-serif;
-        }
-        .hero-section {
-            background-image: url('home/GroupBG@2x.png');
-            background-size: cover;
-            background-position: center;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: white;
-            text-align: center;
-            padding: 100px 0;
-            height: 100svh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .hero-title {
-            font-size: 3rem;
-            font-weight: bold;
-            color: #FFC107;
-        }
-        .hero-subtitle {
-            font-size: 1.25rem;
-            margin-bottom: 30px;
-            color: #A3A3A3;
-        }
-        .btn-whatsapp {
-            background-color: #25d366;
-            color: white;
-            border-radius: 50px;
-        }
-        .navbar {
-            background-color: #212121;
-        }
-        .navbar .nav-link, .navbar-brand {
-            color: #FFC107;
-        }
-        .navbar .nav-link:hover {
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="Development link.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">ختم موثق</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">الرئيسية</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">من نحن</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">الخدمات</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">تواصل معنا</a>
-                    </li>
-                </ul>
+        <!-- Top Bar -->
+    
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="home/Layer_1-1.svg" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Services">الخدمات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#how-it-works">كيف تعمل خدمتنا؟</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-us">تواصل معنا</a>
+                        </li>
+                    </ul>
+                    <div class="top-link text-center">
+                        <a href="#" class="">طلب الإنضمام للموثقين</a>
+                    </div>
+    
+                </div>
+        
             </div>
-        </div>
-    </nav>
-
+        </nav>
+    
     <!-- Hero Section -->
     <header class="hero-section">
         <div class="container">
@@ -84,15 +57,339 @@
                 نقدم لك حلولاً مبتكرة لتوثيق جميع مستنداتك القانونية بسرعة وأمان عبر الإنترنت،
                 دون الحاجة إلى زيارة مكتب التوثيق. خدماتنا متاحة 24/7 في أي وقت وأي مكان في المملكة.
             </p>
-            <div class="d-flex justify-content-center gap-3">
-                <a href="YOUR_SERVICE_URL" class="btn btn-warning px-4 py-2">اطلب الخدمة الآن</a>
-                <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" class="btn btn-whatsapp px-4 py-2">واتساب</a>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="YOUR_SERVICE_URL" class="btn  request px-4 py-2">اطلب الخدمة الآن</a>
+                <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" class="btn btn-whatsapp d-flex column-gap-1 px-4 py-2"> <img src="home/Mask Group 7.svg" alt="واتساب"> واتساب </a>
             </div>
         </div>
     </header>
+    <section class="services-section py-5" id="Services">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="text-center my-5">
+                <h2 class="section-title text-gold">خدماتنا</h2>
+                <p class="section-description text-muted">
+                    نحن نقدم مجموعة متنوعة من خدمات التوثيق الإلكتروني التي تلبي احتياجات الأفراد والشركات. استمتع بسهولة الوصول إلى خدماتنا القانونية عبر الإنترنت وبأعلي درجات الموثوقية.
+                </p>
+            </div>
+            <!-- Services Grid -->
+            <div class="row g-4">
+                <!-- Service Item -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card text-end p-5">
+                        <img src="home/LAWER Services-5.png" alt="إفراغ العقارات" class="img-fluid rounded">
+                        <h4 class="mt-3 text-end">إفراغ العقارات</h4>
+                        <p class="text-muted ">نوفر لك خدمة إفراغ العقارات إلكترونياً في جميع أنحاء المملكة</p>
+                        <a href="#" class="btn request ">طلب الخدمة</a>
+                    </div>
+                </div>
 
+                <!-- Service Item -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card text-end p-5">
+                        <img src="home/LAWER Services-1.png" alt="توثيق العقود" class="img-fluid rounded">
+                        <h4 class="mt-3 text-end">توثيق العقود</h4>
+                        <p class="text-muted ">احصل على توثيق العقود بمختلف أنواعها بسرعة وبأعلى الدقة</p>
+                        <a href="#" class="btn request ">طلب الخدمة</a>
+                    </div>
+                </div>
+                <!-- Service Item -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card text-end p-5">
+                        <img src="home/LAWER Services-2@2x.png" alt="توثيق الوكالات" class="img-fluid rounded">
+                        <h4 class="mt-3 text-end">توثيق الوكالات</h4>
+                        <p class="text-muted ">نساعدك في إنشاء وتوثيق الوكالات القانونية بكل سهولة وسرعة</p>
+                        <a href="#" class="btn request ">طلب الخدمة</a>
+                    </div>
+                </div>
+
+                <!-- Service Item -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card text-end p-5">
+                        <img src="home/LAWER Services-10.png" alt="Service 4" class="img-fluid rounded">
+                        <h4 class="mt-3 text-end">الإقرارات المالية</h4>
+                        <p class="text-muted ">توثيق الإقرارات المالية عبر الإنترنت بطريقة آمنة وسريعة</p>
+                        <a href="#" class="btn request ">طلب الخدمة</a>
+                    </div>
+                </div>
+                <!-- Service Item -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card text-end p-5">
+                        <img src="home/LAWER Services-2.png" alt="Service 5" class="img-fluid rounded">
+                        <h4 class="mt-3 text-end">إفراغ العقارات</h4>
+                        <p class="text-muted ">نوفر لك خدمة إفراغ العقارات إلكترونياً في جميع أنحاء المملكة</p>
+                        <a href="#" class="btn request ">طلب الخدمة</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card text-end p-5">
+                        <img src="home/LAWER Services-1.png" alt="توثيق العقود" class="img-fluid rounded">
+                        <h4 class="mt-3 text-end">توثيق العقود</h4>
+                        <p class="text-muted ">احصل على توثيق العقود بمختلف أنواعها بسرعة وبأعلى الدقة</p>
+                        <a href="#" class="btn request ">طلب الخدمة</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="how-it-works py-5" id="how-it-works">
+        <div class="container pt-5 mx-auto">
+            <!-- Section Title -->
+            <div class="text-center my-5">
+                <h2 class="section-title ">كيف تعمل خدمتنا؟</h2>
+                <p class="section-description ">
+                    نحن نسعى إلى تبسيط عملية التوثيق القانوني لك في خطوات بسيطة. يمكنك اختيار الخدمة التي تحتاجها، رفع مستنداتك، ومن ثم
+                    ستحصل على وثائقك موثقة في غضون 24 ساعة.
+                </p>
+            </div>
+            <div class="row justify-content-center align-items-center py-5">
+                <!-- Steps Section -->
+                <div class="col-lg-5 col-sm-12">
+                    <div class="steps d-flex flex-column align-items-center justify-content-center">
+                        <!-- Step 1 -->
+                        <div class="step d-flex align-items-center py-3 mb-4">
+                            <div class="icon-wrapper me-3">
+                                <img src="home/Avatar-2.svg" alt="service" class="img-fluid">
+                            </div>
+                            <div class="step-text text-center">
+                                <h4 class="text-light mb-1">اختر الخدمة</h4>
+                                <p class="text-light mb-0">قم بتحديد الخدمة التي تحتاجها من قائمة خدماتنا المتنوعة</p>
+                            </div>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="step d-flex align-items-center py-3 mb-4">
+                            <div class="icon-wrapper me-3">
+                                <img src="home/Avatar-1.svg" alt="upload" class="img-fluid">
+                            </div>
+                            <div class="step-text text-center">
+                                <h4 class="text-light mb-1">رفع المستندات</h4>
+                                <p class="text-light mb-0">قم برفع المستندات المطلوبة بسهولة من خلال منصتنا</p>
+                            </div>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="step d-flex align-items-center py-3 mb-4">
+                            <div class="icon-wrapper me-3">
+                                <img src="home/Avatar.svg" alt="document" class="img-fluid">
+                            </div>
+                            <div class="step-text text-center">
+                                <h4 class="text-light mb-1">التوثيق الإلكتروني</h4>
+                                <p class="text-light mb-0">سيتم توثيق مستنداتك إلكترونياً خلال 24 ساعة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image Section -->
+                <div class="col-lg-7 col-sm-12 text-center">
+                    <img src="home/Image.png" alt="كيف تعمل خدمتنا" class="img-fluid rounded mb-4">
+                </div>
+            </div>
+                    </div>
+    </section>
+    <section class="about-section py-5">
+        <div class="container px-5">
+            <div class="row align-items-center">
+                <!-- Image Section -->
+                <div class="col-lg-6">
+                    <h2 class="section-title text-gold">عن محمد الكوهجي</h2>
+                    <p class="section-description ">
+                        محمد الكوهجي هو محامٍ معتمد يتمتع بخبرة طويلة في تقديم خدمات التوثيق الإلكتروني. بفضل التزامه بأعلى معايير الجودة والوثوقية، نضمن لك تجربة سلسة
+                        وسريعة لتوثيق جميع مستنداتك القانونية.
+                    </p>
+                    <p class="section-description ">
+                        محمد الكوهجي هو محامٍ معتمد يتمتع بخبرة طويلة في تقديم خدمات التوثيق الإلكتروني. بفضل التزامه بأعلى معايير الجودة والوثوقية، نضمن لك تجربة سلسة
+                        وسريعة لتوثيق جميع مستنداتك القانونية.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center position-relative">
+                    <div class="image-wrapper">
+                        <div class="gold-background">
+                            <img src="home/team-1.jpg" alt="Mohammed Al-Kohaji" class="img-fluid rounded-circle">
+                        </div>
+                        <!-- Badge for Experience -->
+                        <div class="experience-badge d-flex column-gap-2 position-absolute top-0 start-50 translate-middle-x bg-white text-center rounded-5">
+                            <img src="home/Group 67491-1.svg" alt="">
+                            <div class="text">
+                                <span class="fs-4 fw-bold">8</span>
+                                <p class="mb-0 text-muted">سنة خبرة</p>    
+                            </div>
+                        </div>
+                        <!-- Badge for Clients -->
+                        <div class="clients-badge column-gap-2 d-flex position-absolute bottom-0 start-0 translate-middle-x bg-white text-center rounded-5">
+                            <img src="home/Group 67491.svg" alt="">
+                            <div class="text text-end">
+                                <span class="fs-5 fw-bold ">+2K</span>
+                                <p class="mb-0 text-muted ">العملاء الحاليين</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Text Section -->
+            </div>
+        </div>
+    </section>
+    <section class="contact-section py-5" id="contact-us">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title text-warning">تواصل معنا</h2>
+                <p class="section-description text-muted">
+                    إذا كان لديك أي استفسار أو تحتاج إلى مساعدة، يمكنك التواصل معنا بسهولة. نحن هنا لتلبية احتياجاتك وتسهل عليك الوصول إلى خدماتنا.
+                </p>
+            </div>
+            <div class="row">
+                <!-- Contact Form -->
+                <div class="col-lg-6">
+                    <form class="contact-form">
+                        <div class="mb-4">
+                            <label for="name" class="form-label">الاسم</label>
+                            <input type="text" id="name" class="form-control rounded" placeholder="الاسم">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="form-label">البريد الإلكتروني</label>
+                            <input type="email" id="email" class="form-control rounded" placeholder="البريد الإلكتروني">
+                        </div>
+                        <div class="mb-4">
+                            <label for="phone" class="form-label">رقم الهاتف</label>
+                            <input type="tel" id="phone" class="form-control rounded text-end" placeholder="رقم الهاتف">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="form-label">الرسالة</label>
+                            <textarea id="message" rows="5" class="form-control rounded" placeholder="اكتب رسالتك هنا..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning w-100 py-2 rounded-pill">اطلب الخدمة الآن</button>
+                    </form>
+                </div>
+                                <!-- Contact Methods -->
+                                <div class="col-lg-6">
+                                    <div class="contact-methods">
+                                        <!-- Method 1 -->
+                                        <div class="contact-box mb-4 p-4  rounded-4">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="icon-wrapper  p-0 m-0">
+                                                    <img src="home/Avatar-5.svg" alt="">
+                                                </div>
+                                                <h4 class="mb-0">تواصل عبر واتس آب</h4>
+                                            </div>
+                                            <p class="text-muted">هل لديك أي استفسار؟ يمكنك التواصل معنا مباشرة عبر واتس</p>
+                                            <a href="https://wa.me/966123456789" class="text-gold fw-bold">+966 123 456 789</a>
+                                        </div>
+                                        <!-- Method 2 -->
+                                        <div class="contact-box mb-4 p-4  rounded-4">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="icon-wrapper  p-0 m-0">
+                                                    <img src="home/Avatar-4.svg" alt="">
+                                                </div>
+                                                <h4 class="mb-0">تواصل عبر الهاتف</h4>
+                                            </div>
+                                            <p class="text-muted">لديك أسئلة أو بحاجة إلى استشارات سريعة؟ تواصل معنا عبر الهاتف</p>
+                                            <a href="tel:966123456789" class="text-gold fw-bold">+966 123 456 789</a>
+                                        </div>
+                                        <!-- Method 3 -->
+                                        <div class="contact-box mb-4 p-4  rounded-4">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="icon-wrapper   p-0 m-0">
+                                                    <img src="home/Avatar-3.svg" alt="">
+                                                </div>
+                                                <h4 class="mb-0">موقعنا الجغرافي</h4>
+                                            </div>
+                                            <p class="text-muted">
+                                                يمكنك زيارتنا في مكتبنا الرئيسي للحصول على خدماتنا مباشرة.
+                                                <br>
+                                                المملكة العربية السعودية، الرياض، شارع الملك فهد، مبنى رقم 123
+                                            </p>
+                                            <a href="" class="text-gold fw-bold">المملكة العربية السعودية، الرياض، شارع الملك فهد، مبنى رقم 123</a>
+                                        </div>
+                                    </div>
+                                </div>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="footer-section py-5">
+        <div class="container">
+            <div class="row text-light">
+                                <!-- About Section -->
+                                <div class="col-md-6">
+                                    <div class="parent ps-5">
+                                        <div class="mb-3 ps-5">
+                                            <img src="home/Layer_1.svg" alt="Logo" class="img-fluid mb-2">
+                                        </div>
+                                        <p class="foot-desc">
+                                            "نقدم لك حلولاً مبتكرة لتوثيق جميع مستنداتك القانونية بسرعة وأمان عبر الإنترنت، دون الحاجة إلى زيارة مكتب التوثيق. خدماتنا متاحة 24/7 في أي وقت وأي مكان في المملكة."
+                                        </p>
+                                        <!-- Social Media Links -->
+                                    </div>
+                                </div>
+                                        <!-- Quick Links -->
+                                <div class="col-md-3 mb-4 mb-md-0">
+                                    <div class="parent ps-5">
+                                        <h5 class="footer-title mb-3">روابط سريعة</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#" class="text-light text-decoration-none">الصفحة الرئيسية</a></li>
+                                            <li><a href="#" class="text-light text-decoration-none">خدماتنا</a></li>
+                                            <li><a href="#" class="text-light text-decoration-none">تسجيل الموثقين</a></li>
+                                            <li><a href="#" class="text-light text-decoration-none">كيف تعمل خدمتنا؟</a></li>
+                                            <li><a href="#" class="text-light text-decoration-none">تواصل معنا</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Contact Information -->
+                                <div class="col-md-3 mb-4 mb-md-0">
+                                    <div class="parent text-end ">
+                                        <h5 class="footer-title mb-3">معلومات الاتصال</h5>
+                                        <ul class="list-unstyled">
+                                            <li>رقم الهاتف: <br> +966 XXX XXXX</li>
+                                            <li class="mt-2">البريد الإلكتروني: <br> <a href="mailto:info@notaryservices.com" class="text-white">info@notaryservices.com</a></li>
+                                            <li class="mt-2">الموقع الجغرافي: <br> <a href="#" class="text-white">المملكة العربية السعودية، الرياض</a></li>
+                                        </ul>
+    
+                                    </div>
+                                </div>
+                
+            </div>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom text-center text-light mt-4 pt-4 border-top">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a href="#" class="text-light text-decoration-none">ملفات تعريف الارتباط</a></li>
+                    <li class="list-inline-item mx-3">|</li>
+                    <li class="list-inline-item"><a href="#" class="text-light text-decoration-none">الخصوصية</a></li>
+                    <li class="list-inline-item mx-3">|</li>
+                    <li class="list-inline-item"><a href="#" class="text-light text-decoration-none">البنود</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    
+    
     <!-- Bootstrap JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Get the height of the header
+        var headerHeight = $('.hero-section').outerHeight();
+
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= headerHeight) {
+                // Add dark background to navbar
+                $('.navbar').css({
+                    'background-color': 'rgba(0, 0, 0, 0.9)',
+                    'transition': 'background-color 0.5s ease'
+                });
+            } else {
+                // Remove dark background when back at the top
+                $('.navbar').css({
+                    'background-color': 'transparent',
+                    'transition': 'background-color 0.5s ease'
+                });
+            }
+        });
+    });
+</script>
+
 </body>
 </html>
-
