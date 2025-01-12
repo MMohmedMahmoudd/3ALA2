@@ -488,8 +488,8 @@ height: 116svh;
         align-items: center !important;
     }
     .steps .step{
-        width: 400px !important;
-        max-width: 400px !important;
+        width: 380px !important;
+        max-width: 380px !important;
     }
     img.img-fluid{
         width: 100% !important;
@@ -504,9 +504,11 @@ height: 116svh;
     .footer-title{
         padding: 0 !important;
     }
+    .contact-form button{
+        margin-bottom: 1rem;
+    }
 
-
-}
+}   
 
 @media (max-width: 768px) {
     .hero-title {
